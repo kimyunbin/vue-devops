@@ -20,12 +20,13 @@ jobs:
 
     steps:
     - name: Checkout source code
-      users: actions/checout@master
+      uses: actions/checout@master
     
     - name: Set up Node.js
       uses: actions/setup-node@master
       with:
         node-vesion: 14.x
+        
     - name: Install dependencies
       run: yarn install
     
